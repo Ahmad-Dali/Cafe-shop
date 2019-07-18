@@ -1,0 +1,328 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0; 
+}
+
+/* Header */
+header{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  padding: 0 200px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .logo{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+header nav label{
+  display: none; 
+} 
+header nav input{
+  display: none;
+} 
+header nav ul{ 
+ display: flex;
+ padding: 0;
+ margin: 0;
+}
+header nav ul li{ 
+  padding: 0 15px;
+  font-size: 20px;
+  list-style: none;
+} 
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+#checkbox:checked + ul{
+  display: block;
+}
+/* Header */
+
+/* Home */
+.home{
+  width: 100%;
+  height: 100vh;
+  background-image: url("./Pic/background-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home h2{
+  margin: 0;
+  font-size: 50px;
+  padding-top: 190px;
+  padding-left: 70px;
+  color: white;
+}
+.home p{
+  color: white;
+  font-size: 40px; 
+  padding-left: 100px;
+  margin: 0;
+}
+/* Home */
+
+/* About us */
+.about h1{
+  margin: 0;
+  padding: 80px 0 30px 60px; 
+  font-size: 40px;
+} 
+.about main{
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+} 
+.about main img{
+  width: 30%;
+  height: 75vh;
+  border-radius: 5px;
+}
+.about main div{ 
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about main p{ 
+  font-size: 22px;
+} 
+.about main div button{
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  text-align: center;
+}
+/* About us */
+
+/* Services */
+.services h1{
+  margin: 0;
+  padding: 80px 0 30px 60px; 
+  font-size: 40px;
+}
+.services main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services main img{
+  width: 34%;
+  border-radius: 10px;
+  margin: 30px;
+}
+/* Services */ 
+
+/* Contact */
+  .contact{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact h2{
+    font-size: 35px;
+  }
+  .contact form{
+    width: 50%;
+    text-align: center;
+  }
+  .contact form :nth-of-type(1){
+    width: 40%;
+    height: 40px; 
+    font-size: 12px; 
+    margin-right: 5px;
+    padding-left: 15px;
+  }
+  .contact form :nth-of-type(2){
+    width: 40%;
+    height: 40px; 
+    font-size: 12px; 
+    margin-left: 5px;
+    padding-left: 15px;
+  }
+  .contact form :nth-of-type(3){
+    width: 82%;
+    height: 40px; 
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 15px;
+  }
+  .contact form .textarea{
+    width: 82%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .contact form :nth-of-type(4){
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+/* Contact */
+
+/* Footer */
+  .footer{
+    /* width: 100%; */
+    /* height: 100px; */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white; 
+    padding: 30px;
+  }
+  .footer i{
+    display: inline-block;
+  }
+/* Footer */
+
+
+
+
+
+@media(max-width:750px){
+
+  /* Header */
+  header{
+    padding: 0 40px 0 40px;
+  }
+
+  header .logo{
+    padding-top: 30px;
+    position: fixed;
+  }
+
+  header nav{
+  }
+  
+  header nav label{
+    display: block;
+    font-size: 26px; 
+    color: white;
+    position: fixed;
+    z-index: 9999; 
+    right: 50px;
+  }
+
+  header nav ul{
+    display: none; 
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    right: 0;
+    bottom: 40%;
+    /* background-color: red; */
+    text-align: center; 
+    margin-top: 0;
+  }
+  header nav ul li {
+    line-height: 60px;
+    font-size: 17px;
+    border-bottom: 1px solid gray;
+  }
+  header nav ul li:first-child{
+    margin-top: 100px; 
+  }
+  /* Header */
+
+  /* Home */
+  .home h2{
+    font-size: 40px;
+    padding-top: 170px;
+    padding-left: 70px;
+  }
+  .home p{
+    font-size: 30px;
+  }
+  /* Home */
+
+  /* About us */
+    .about ,main{
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+    }
+    .about h1{
+      padding: 0;
+      padding-top: 80px; 
+      padding-bottom: 30px;
+      font-size: 26px;
+    }
+    .about main img{ 
+      width: 70%; 
+      height: 50vh;
+    }
+    .about main div{
+      width: 80%;
+      height: 30vh;
+    }
+    .about main div p{
+      font-size: 17px;
+    }
+    .about main div button{
+      width: 40%; 
+      font-size: 15px;
+    }
+  /* About us */
+
+  /* Services */
+    .services{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .services h1{
+      padding: 0;
+      padding-top: 80px;
+      font-size: 26px;
+    }
+    .services main img{
+      width: 80%;
+    }
+  /* Services */
+
+  /* Contact */
+    .contact h2{
+      font-size: 26px;
+    }
+    .contact form{
+      width: 100%;
+      background-color: red;
+    }
+    .contact form :nth-of-type(1){
+      height: 30px;
+    }
+    .contact form :nth-of-type(2){
+      height: 30px;
+    }
+    .contact form :nth-of-type(3){
+      height: 30px;
+      width: 83%;
+    }
+    .contact form :nth-of-type(1){
+      height: 30px;
+    }
+  /* Contact */
+
+}
